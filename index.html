@@ -10,55 +10,126 @@
     <header class="bg-blue-600 text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold">CareerCompass</h1>
-
-            <!-- Hamburger Menu Button -->
-            <div class="md:hidden">
-                <button id="menu-toggle" class="focus:outline-none">
+            <nav class="relative">
+                <button id="menu-toggle" class="md:hidden">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
-            </div>
-
-            <!-- Navigation Bar for Larger Screens -->
-            <nav class="hidden md:block">
-                <ul class="flex space-x-4">
-                    <li><a href="#" class="hover:text-blue-200">Home</a></li>
-                    <li><a href="#" class="hover:text-blue-200">About</a></li>
-                    <li><a href="#" class="hover:text-blue-200">Services</a></li>
-                    <li><a href="#" class="hover:text-blue-200">Resources</a></li>
-                    <li><a href="#" class="hover:text-blue-200">Contact</a></li>
+                <ul id="menu" class="hidden md:flex md:space-x-4 absolute md:relative right-0 top-full md:top-auto bg-blue-600 md:bg-transparent p-4 md:p-0 rounded shadow md:shadow-none">
+                    <li><a href="#" class="block py-2 md:py-0 hover:text-blue-200">Home</a></li>
+                    <li><a href="#" class="block py-2 md:py-0 hover:text-blue-200">About</a></li>
+                    <li><a href="#" class="block py-2 md:py-0 hover:text-blue-200">Services</a></li>
+                    <li><a href="#" class="block py-2 md:py-0 hover:text-blue-200">Resources</a></li>
+                    <li><a href="#" class="block py-2 md:py-0 hover:text-blue-200">Contact</a></li>
                 </ul>
             </nav>
         </div>
-
-        <!-- Dropdown Menu for Small Screens -->
-        <nav id="mobile-menu" class="hidden md:hidden">
-            <ul class="flex flex-col p-4 space-y-4 bg-blue-700">
-                <li><a href="#" class="hover:text-blue-300">Home</a></li>
-                <li><a href="#" class="hover:text-blue-300">About</a></li>
-                <li><a href="#" class="hover:text-blue-300">Services</a></li>
-                <li><a href="#" class="hover:text-blue-300">Resources</a></li>
-                <li><a href="#" class="hover:text-blue-300">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main class="container mx-auto mt-8 p-4">
-        <!-- Your existing content here -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Discover Your Path to Success</h2>
+            <p class="text-lg mb-4">Explore diverse career opportunities and make informed decisions about your future with CareerCompass.</p>
+            <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Get Started</a>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-xl font-semibold mb-2">AI-Powered Guidance</h3>
+                <p>Receive personalized career advice based on your interests and strengths.</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-xl font-semibold mb-2">Mentorship Programs</h3>
+                <p>Connect with professionals in your field of interest for guidance and support.</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-xl font-semibold mb-2">Career Exploration</h3>
+                <p>Explore different careers through interactive simulations and videos.</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-xl font-semibold mb-2">Resource Portal</h3>
+                <p>Access comprehensive information on career options, skills, and job market trends.</p>
+            </div>
+        </section>
+
+        <section class="bg-blue-100 p-8 rounded mb-12">
+            <h2 class="text-2xl font-bold mb-4">Find Your Career Match</h2>
+            <p class="mb-4">Take our AI-powered career assessment to discover careers that align with your interests and skills.</p>
+            <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Start Assessment</a>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Upcoming Events</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Career Fair</h3>
+                    <p class="mb-2">Date: September 15, 2024</p>
+                    <p>Explore opportunities from top companies in various industries.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Workshop: Resume Building</h3>
+                    <p class="mb-2">Date: September 22, 2024</p>
+                    <p>Learn how to create a compelling resume that stands out.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Webinar: Tech Careers</h3>
+                    <p class="mb-2">Date: September 29, 2024</p>
+                    <p>Discover the latest trends and opportunities in the tech industry.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-gray-800 text-white p-8">
-        <!-- Your footer content here -->
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-semibold mb-2">CareerCompass</h3>
+                <p>Empowering students to make informed career choices.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2">Quick Links</h3>
+                <ul>
+                    <li><a href="#" class="hover:text-blue-300">About Us</a></li>
+                    <li><a href="#" class="hover:text-blue-300">Services</a></li>
+                    <li><a href="#" class="hover:text-blue-300">Resources</a></li>
+                    <li><a href="#" class="hover:text-blue-300">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2">Connect With Us</h3>
+                <ul>
+                    <li><a href="#" class="hover:text-blue-300">Facebook</a></li>
+                    <li><a href="#" class="hover:text-blue-300">Twitter</a></li>
+                    <li><a href="#" class="hover:text-blue-300">LinkedIn</a></li>
+                    <li><a href="#" class="hover:text-blue-300">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
     <script>
-        // Toggle the mobile menu
         const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
+        const menu = document.getElementById('menu');
 
         menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            menu.classList.toggle('hidden');
+        });
+
+        // Hide menu when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+                menu.classList.add('hidden');
+            }
+        });
+
+        // Ensure menu is visible on larger screens
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) { // md breakpoint
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
         });
     </script>
 </body>
